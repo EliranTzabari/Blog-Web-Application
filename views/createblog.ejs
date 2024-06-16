@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/createblog" method="POST">
+    <input name="subject" type="text" class="feedback-input" placeholder="Subjet" />
+    <textarea name="content" class="feedback-input" placeholder="Content"></textarea>
+    <input type="submit" value="SUBMIT" />
+  </form>
+
+<%- include("partials/footer.ejs") %>
