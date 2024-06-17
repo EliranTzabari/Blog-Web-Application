@@ -37,9 +37,7 @@ app.get("/blogs", (req, res) => {
 })
 
 app.post("/blogs", (req, res) =>{
-    const requestBody = req.body
-    const keys = Object.keys(requestBody)
-    const key = keys[0]
+    const key = req.body.choice
 
     function readTxtFile(){
         return fs.readFileSync(`./public/content/${key}.txt`, 'utf-8')
